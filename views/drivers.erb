@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link type="text/css" rel="stylesheet" href="css/subpar.css">
+		<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+		$(window).load(  
+    		
+			function(){ $("body").fadeOut(100);
+						$("body").fadeIn(2000);
+						// $("h1").slideUp(2000);
+						// $("h1").slideDown(2000)
+						// $("p").slideDown(2000);
+						
+						
+
+				('');   } );
+		</script>
+		<a href="/"><title>Sübpar</title></a>
+	</head>
+	<body>
+		<header>
+			<nav id="primary_nav_wrap">
+			
+			<ul>
+				<li><a href="/"><h2 id="menu">MENU</h2></a>
+					<ul>
+						<li><a href="/mission">MISSION</a></li>
+						<li><a href="/drivers">DRIVERS</a></li>
+						<li><a href="/contact">CONTACT</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			</nav>
+			<a href="/"><h1 id="title">S Ü B P A R</h1></a>
+		</header>
+
+		<img style="margin-top: 0px;z-index:-1;" src="http://image.europeancarweb.com/f/news/epcp_1305_bmw_pininfarina_gran_lusso_coupe/53166603/BMW-Pininfarina-Gran-Lusso-Coupe-Concpetinterior-view-with-driver.jpg" width="100%">
+
+		<div class="outer">
+
+		<img src="images/subparbg2.jpg" height="500px" width="100%" style="z-index:-1">
+
+		<div class="bottomleft">
+		<h1>Why become a Sübpar driver?</h1>
+		</div>
+		
+		<div class="driverinfo">
+			<h2>Flexible Hours</h2>
+			<li>Schedule your own hours.</li>
+			<li>Be your own boss.</li>
+			<h2>Outstanding Driver Support</h2>
+			<li>Our top of the line driver support team
+				is there for you 24/7 whenever a problem may occur.</li>
+		</div>
+
+		<div class="driver_signup">
+			<h1>Sign up to become a driver Today!</h1>
+			<script>
+			$(document).ready(function() {
+				$("#drivers").on('submit',function(event){
+					event.preventDefault();
+					$.ajax({
+						data: {
+								email: $('#drivers input[name="email"]').val(),
+						},
+						url: "/drivers",
+						method: "POST"
+					}).done(function(){
+						$("body").fadeOut(100)
+						$("body").fadeIn(2000)})
+				});$(document).onSubmit(  
+    		
+			function(){ $("body").fadeOut(100)
+						$("body").fadeIn(2000)
+			;
+						})
+				
+			});
+
+		</script>
+			
+			<form id ="drivers" method="POST" action="" onSubmit=>   
+				<label for="email">Email</label>   
+				<input type="email" name="email">   
+				<input type="submit"> 
+			</form>
+
+		</div>
+		
+		</div>
+
+	</body>
+</html>
