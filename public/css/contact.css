@@ -1,0 +1,127 @@
+header {
+	display:inline-block;
+	text-align:center;
+	position:fixed;
+	background-color:rgba(0, 0, 0, 0.3);
+	border-bottom:2px solid rgba(255, 255, 255, 0.5);
+	width:100%;
+	height:65px;
+}
+h1#title {
+	display:inline-block;
+	font-weight:100;
+	font-family:"Orbitron", sans-serif;
+	color:white;
+	margin-top:21px;
+	margin-left:-110px;
+}
+h1#title a {
+	color:white;
+	text-decoration:none;
+}
+body {
+	margin:0px;
+}
+
+#primary_nav_wrap h2 {
+	float:left;
+	color:white;
+	width:100px;
+	height:45px;
+	padding:0px;
+	margin:22px 10px 0 10px;
+}
+#primary_nav_wrap ul {
+	list-style:none;
+	float:left;
+	width:100px;
+	margin:0 0 0 25px;
+	padding:0 0 0 10px;
+	font-family:"Orbitron", sans-serif;
+}
+#primary_nav_wrap ul a {
+	display:block;
+	color:black;
+	background-color:white;
+	text-decoration:none;
+	line-height:32px;
+}
+#primary_nav_wrap ul li {
+	position:relative;
+	float:left;
+	margin:0px;
+	padding:0;
+}
+#primary_nav_wrap ul li:hover {
+	background-color:#f6f6f6;
+}
+#primary_nav_wrap ul ul {
+	display:none;
+	font-size:12px;
+	position:absolute;
+	top:67px;
+	margin:0px;
+}
+#primary_nav_wrap ul ul li {
+	width:100px;
+	margin-left:0px;
+}
+#primary_nav_wrap ul li:hover > ul {
+	display:block;
+}
+#primary_nav_wrap ul ul li a:hover {
+	background-color:#f6f6f6;
+}
+
+form {
+	position:absolute;
+	top:100px;
+	left:170px;
+	line-height:20px;
+	background:-webkit-linear-gradient(rgba(250, 250, 250, 0.8), rgba(220, 220, 220, 0.8));
+	border:1px solid darkgray;
+	border-radius:10px;
+	padding:12px;
+	width:384px;
+	font-family:"Orbitron";
+}
+form input {
+	border:1px solid darkgray;
+	width:377px;
+	height:18px;
+	font-size:12px;
+}
+form textarea {
+	border:1px solid darkgray;
+	font-size:12px;
+	width:375px;
+	resize:none;
+}
+form input#send_button {
+	background-color:#2E9AFE;
+	border-radius:4px;
+	color:white;
+	width:383px;
+	height:30px;
+	padding-top:7px;
+	margin-top:6px;
+	font-family:"Orbitron";
+}
+form * {
+	opacity:0.75;
+}
+img {
+	z-index:-1;
+}
+div#sent_notice {
+	position:absolute;
+	top:100px;
+	left:600px;
+	line-height:20px;
+	background:-webkit-linear-gradient(rgba(250, 250, 250, 0.8), rgba(220, 220, 220, 0.8));
+	border:1px solid darkgray;
+	border-radius:10px;
+	padding:12px;
+	width:384px;
+	font-family:"Orbitron";
+}
