@@ -1,10 +1,10 @@
 $(document).click(  
             
-            function(){ $("body").fadeOut(2000);
+            function(){ $("body").fadeOut(100);
                         $("body").fadeIn(2000);
-                        $("h1").slideUp(2000);
-                        $("h1").slideDown(2000)
-                        $("p").slideDown(2000);
+                        $(".mission_text").slideUp(500);
+                        $(".mission_text").slideDown(5000)
+                       // $("p").slideDown(2000);
                         
                         
 
